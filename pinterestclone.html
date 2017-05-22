@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html>
+	<head>
+		<title>Pinterest Clone</title>
+		<link rel="stylesheet" href="pinterestclone.css">
+	</head>
+		<body>
+
+			<div id="header">
+				<ul>
+					<div id="logo"><img src="http://seeklogo.com/images/P/pinterest-logo-8561DDA2E1-seeklogo.com.png" alt="logo" /></div>
+<!-- 					<div id="search-icon"><img src="http://www.freeiconspng.com/uploads/search-icon-png-2.png"></div> -->
+					<div id="search">
+					  <input id="search-box" type="text" placeholder="Search" />
+					</div>
+
+					<div id="nav-buttons">
+					  <a href="https://www.pinterest.com/discover/"><img src="https://cdn4.iconfinder.com/data/icons/eldorado-mobile/40/compas_2-512.png"></a>
+					  <a href="https://www.pinterest.com/trevorhoward2/"><img src="https://img.clipartfest.com/5a68d99cd467003c04b4ef64004c4313_download-this-image-as-user-profile-clipart_600-557.png"></a>
+					  <a href="https://www.pinterest.com/discover/"><img src="data:image/png;base64,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"></a>
+					</div>
+				</ul>
+			</div>
+
+				<div id="wrapper">
+				  <div id="columns">
+				    <div class="pin">
+				      <img src="https://shopswell-com-prod.s3.amazonaws.com/assets/77bad941-0d82-4ac2-bb72-82c6c28ce419/ESP-LTD-Elite-Guitars.jpg"/>
+				      <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p>
+				    </div>
+
+				    <div class="pin">
+						  <img src="http://thehub.musiciansfriend.com/images/guitarsguide/martin-lx1e-little-martin-acoustic-guitar-800x303.jpg"/>
+						  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p>
+				    </div>
+
+				    <div class="pin">
+						  <img src="http://cdn.growassets.net/user_files/esp/product_images/000/009/866/xlarge.png?1389979547"/>
+						  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p>
+				    </div>
+
+				    <div class="pin">
+						  <img src="https://www.premierguitar.com/ext/resources/images/content/2016-01/LNU/JAN16_LNU_ESP_Guitars_WEB.jpg"/>
+						  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p>
+				    </div>
+
+				    <div class="pin">
+						  <img src="http://ep.yimg.com/ay/yhst-10498744216668/esp-guitars-eclipse-ctm-stblksb-5.gif"/>
+						  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p>
+				    </div>
+
+				    <div class="pin">
+						  <img src="http://ep.yimg.com/ay/yhst-10498744216668/esp-guitars-e-ii-horizon-iii-fm-fr-stblk-5.gif"/>
+						  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p>
+				    </div>
+
+				    <div class="pin">
+						  <img src="http://cdn.growassets.net/user_files/esp/site_assets/000/012/280/original.jpg?1450486514"/>
+						  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p>
+				    </div>
+
+				    <div class="pin">
+						  <img src="http://www.long-mcquade.com/files/47128/lg_1d316c4aeb6828c37d5617d780140503.png"/>
+						  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p>
+				    </div>
+
+				    <div class="pin">
+						  <img src="http://leftyfretz.com/wp-content/uploads/2011/10/esp-left-handed-guitars-lefty.jpg"/>
+						  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p>
+				    </div>
+
+				    <div class="pin">
+						  <img src="https://i.ytimg.com/vi/7orQUoJVmuM/maxresdefault.jpg"/>
+						  <p>Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque</p>
+				    </div>
+				  </div>
+				</div>
+
+
+			</header>
+			<hr>
+			</header>
+		</body>
+</html>
